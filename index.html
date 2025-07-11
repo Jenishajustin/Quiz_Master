@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>QuizMaster</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>QuizMaster</h1>
+    <h4>Ready to Challenge Your Brain?</h4>
+    <p id="questionText">Loading...</p>
+
+    <input type="text" id="answerInput" placeholder="Type your answer here" />
+
+    <div class="buttons">
+      <button onclick="nextQuestion(strictScoring)">Next (Strict)</button>
+      <button onclick="nextQuestion(lenientScoring)">Next (Lenient)</button>
+    </div>
+
+    <p id="scoreOutput"></p>
+    <div class="progress-container">
+      <div id="progressBar"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
